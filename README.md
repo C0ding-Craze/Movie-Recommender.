@@ -41,9 +41,8 @@ Enter the movie name (with year of release): Toy Story (1995)
                 Tale of Despereaux, The (2008)     3.0
                       The Good Dinosaur (2015)     3.0
                                   Turbo (2013)     2.5
-Adventures of Rocky and Bullwinkle, The (2000)     2.2
 
-## Requirements  
+## Package Requirements  
 
 To run this project, you need the following Python libraries:  
 
