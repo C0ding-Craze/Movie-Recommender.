@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+
 # 🎬 Movie Recommendation System  
 
 A Python-based **content-based movie recommendation system** that suggests similar movies based on **genres** and **average ratings**.  
