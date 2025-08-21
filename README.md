@@ -28,20 +28,6 @@ This project requires two CSV files from the [MovieLens dataset](https://grouple
    - `movieId`: ID of the movie  
    - `rating`: Rating given by the user (float)  
 
----
-
-## Requirements  
-
-To run this project, you need the following Python libraries:  
-
-- **pandas**  
-- **scikit-learn**  
-
-You can install them using:  
-
-```bash
-pip install pandas scikit-learn
-
 ---  
 
 **Example Input**  
@@ -56,3 +42,15 @@ Enter the movie name (with year of release): Toy Story (1995)
                       The Good Dinosaur (2015)     3.0
                                   Turbo (2013)     2.5
 Adventures of Rocky and Bullwinkle, The (2000)     2.2
+
+## Requirements  
+
+To run this project, you need the following Python libraries:  
+
+- **pandas**  
+- **scikit-learn**  
+
+You can install them using:  
+
+```bash
+pip install pandas scikit-learn
