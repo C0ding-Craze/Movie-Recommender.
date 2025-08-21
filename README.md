@@ -1,35 +1,58 @@
-# Movie Recommendation System
+# 🎬 Movie Recommendation System  
 
-A Python-based movie recommendation system that suggests similar movies based on genre features and average ratings. This project uses **TF-IDF** vectorization and the **k-nearest neighbors (k-NN)** algorithm for similarity computation.
-
-## Features
-
-- Computes recommendations for a given movie title.
-- Uses cosine similarity to find similar movies.
-- Sorts recommendations by average user ratings.
+A Python-based **content-based movie recommendation system** that suggests similar movies based on **genres** and **average ratings**.  
+This project leverages **TF-IDF Vectorization** and the **k-Nearest Neighbors (k-NN)** algorithm with cosine similarity for accurate recommendations.  
 
 ---
 
-Data Requirements
-This project requires two CSV files:
+## Features  
 
-1. **movies.csv**: Contains movie metadata with the following columns:
-   - `movieId`: Unique identifier for each movie.
-   - `title`: The name of the movie.
-   - `genres`: Genres associated with the movie, separated by `|`.
+- Computes recommendations for a given movie title  
+- Uses **cosine similarity** on movie genres to find similar titles  
+- Sorts recommended movies by **average user ratings**  
+- Simple **command-line interface**  
 
-2. **ratings.csv**: Contains user ratings with the following columns:
-   - `userId`: ID of the user.
-   - `movieId`: ID of the movie.
-   - `rating`: Rating given by the user (float).
-.
+---
 
+## Dataset Requirements  
 
-## Usage
+This project requires two CSV files from the [MovieLens dataset](https://grouplens.org/datasets/movielens/):  
 
-Prepare your data: Place the movies.csv and ratings.csv files in the project directory.
-Run the script and then Input the title of a movie (with the year in parentheses) when prompted:
+1. **movies.csv**  
+   - `movieId`: Unique identifier for each movie  
+   - `title`: The name of the movie (with year of release)  
+   - `genres`: Genres associated with the movie, separated by `|`  
 
-***Example Input***
+2. **ratings.csv**  
+   - `userId`: Unique identifier of the user  
+   - `movieId`: ID of the movie  
+   - `rating`: Rating given by the user (float)  
 
-Enter the movie name (with year of release): The Matrix (1999)
+---
+
+## Requirements  
+
+To run this project, you need the following Python libraries:  
+
+- **pandas**  
+- **scikit-learn**  
+
+You can install them using:  
+
+```bash
+pip install pandas scikit-learn
+
+---  
+
+**Example Input**  
+
+Enter the movie name (with year of release): Toy Story (1995)
+
+**Example Output**
+
+                                         title  rating
+                        Shrek the Third (2007)     3.0
+                Tale of Despereaux, The (2008)     3.0
+                      The Good Dinosaur (2015)     3.0
+                                  Turbo (2013)     2.5
+Adventures of Rocky and Bullwinkle, The (2000)     2.2
